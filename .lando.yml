@@ -1,4 +1,4 @@
-name: lando-and-drupal-8
+name: psba
 recipe: drupal8
 config:
   webroot: web
