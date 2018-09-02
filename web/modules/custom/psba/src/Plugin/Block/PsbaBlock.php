@@ -44,4 +44,13 @@ class PsbaBlock extends BlockBase implements BlockPluginInterface {
     return $form;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function blockSubmit($form, FormStateInterface $form_state) {
+    parent::blockSubmit($form, $form_state);
+    $values = $form_state->getValues();
+    $this->configuration['psba_block_custom'] = $values['psba_block_custom'];
+  }
+
 }
