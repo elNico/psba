@@ -1,0 +1,7 @@
+psba.content:
+  path: '/psba'
+  defaults:
+    _controller: '\Drupal\psba\Controller\PsbaController::content'
+    _title: 'Welcome to the PSBA page'
+  requirements:
+    _permission: 'access content'

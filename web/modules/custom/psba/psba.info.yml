@@ -1,0 +1,5 @@
+name: PSBA
+description: Test module for the PSBA development course.
+core: 8.x
+type: module
+package: PSBA custom modules

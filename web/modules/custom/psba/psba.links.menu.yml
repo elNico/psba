@@ -1,0 +1,18 @@
+psba.admin:
+  title: 'PSBA custom page'
+  description: 'Example of a custom page.'
+  parent: system.admin_config_development
+  route_name: psba.content
+  weight: 100
+psba.external:
+  title: 'PSBA external link'
+  description: 'Example of providing an external link.'
+  parent: system.admin_config_development
+  url: https://www.drupal.org/
+  weight: 110
+psba.internal:
+  title: 'PSBA internal link'
+  description: 'Example of providing an internal link.'
+  parent: system.admin_config_development
+  url: internal:/admin/content
+  weight: 105
