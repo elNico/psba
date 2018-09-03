@@ -21,8 +21,18 @@ class PsbaBlock extends BlockBase implements BlockPluginInterface {
    * {@inheritdoc}
    */
   public function build() {
+    $config = $this->getConfiguration();
+
+    if (!empty($config['psba_block_custom'])) {
+      $custom_value = $config['psba_block_custom'];
+    }
+    else {
+      $custom_value = $this->t('not set');
+    }
     return array(
-      '#markup' => $this->t('Custom content.'),
+      '#markup' => $this->t('The custom value is @cv.', array(
+        '@cv' => $custom_value,
+      )),
     );
   }
 
