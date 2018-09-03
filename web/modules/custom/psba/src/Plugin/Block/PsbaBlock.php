@@ -63,4 +63,14 @@ class PsbaBlock extends BlockBase implements BlockPluginInterface {
     $this->configuration['psba_block_custom'] = $values['psba_block_custom'];
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function defaultConfiguration() {
+    $default_config = \Drupal::config('psba.settings');
+    return [
+      'psba_block_custom' => $default_config->get('psba_block.default_custom_value'),
+    ];
+  }
+
 }
