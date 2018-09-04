@@ -1,0 +1,21 @@
+uuid: b9850c71-6e94-441e-871e-176e647d65c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - psba
+  theme:
+    - bartik
+id: psbablock_2
+theme: bartik
+region: sidebar_second
+weight: -7
+provider: null
+plugin: psba_block
+settings:
+  id: psba_block
+  label: 'PSBA block'
+  provider: psba
+  label_display: visible
+  psba_block_custom: Sparklemuffin
+visibility: {  }

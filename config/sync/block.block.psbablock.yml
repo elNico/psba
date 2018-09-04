@@ -1,0 +1,21 @@
+uuid: d01271f3-e3dc-450f-bc0a-327aa613f4f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - psba
+  theme:
+    - bartik
+id: psbablock
+theme: bartik
+region: sidebar_second
+weight: -6
+provider: null
+plugin: psba_block
+settings:
+  id: psba_block
+  label: 'PSBA block'
+  provider: psba
+  label_display: visible
+  psba_block_custom: 'some value'
+visibility: {  }
