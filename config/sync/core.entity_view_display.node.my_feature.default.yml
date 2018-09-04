@@ -1,0 +1,52 @@
+uuid: 687802e1-9bb4-4e99-8cba-d4af90548869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.my_feature.body
+    - field.field.node.my_feature.field_date
+    - field.field.node.my_feature.field_pic
+    - node.type.my_feature
+  module:
+    - datetime
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: u8lle4g8vkuGlpVQVN6mkMmye0M89vTwr509Huvsz2Q
+id: node.my_feature.default
+targetEntityType: node
+bundle: my_feature
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 102
+    label: above
+    settings:
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_plain
+    region: content
+  field_pic:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

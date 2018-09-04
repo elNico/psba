@@ -1,0 +1,32 @@
+uuid: 3e8806a5-dafb-42bb-a5b7-191cb19df893
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.imagetest.body
+    - field.field.node.imagetest.field_image01
+    - node.type.imagetest
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: n_36VihMtqFucX1Ugiikr6FoFrAb-JDHfupdWICeE1o
+id: node.imagetest.teaser
+targetEntityType: node
+bundle: imagetest
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_image01: true

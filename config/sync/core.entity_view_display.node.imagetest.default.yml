@@ -1,0 +1,42 @@
+uuid: 05791166-bf48-48eb-aacf-027f193462e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.imagetest.body
+    - field.field.node.imagetest.field_image01
+    - image.style.large
+    - node.type.imagetest
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 08PfCh2jX_PDmGdGFE4y81OjCBcOBGsmbz4HTZCWg_g
+id: node.imagetest.default
+targetEntityType: node
+bundle: imagetest
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image01:
+    weight: 102
+    label: above
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: c3c68c52-26c8-44ec-8242-f82d80eeb735
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+_core:
+  default_config_hash: FvhZUB2EWEt_CFddv_i7CLuySF0heJgP3EeELEde0Ns
+id: node.field_pic
+field_name: field_pic
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

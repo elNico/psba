@@ -1,0 +1,24 @@
+uuid: 3d6e75a5-c2cb-4f41-8026-4914934afaa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.imagetest
+  module:
+    - text
+_core:
+  default_config_hash: yRSAZaHHzK0RUDYasmBxxnHOg_4eHpjMq1yOyTKa6es
+id: node.imagetest.body
+field_name: body
+entity_type: node
+bundle: imagetest
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

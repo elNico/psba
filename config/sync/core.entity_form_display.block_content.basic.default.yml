@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_my_text_field
   module:
     - text
 _core:
@@ -23,6 +24,14 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_my_text_field:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   info:
     type: string_textfield
     weight: -5

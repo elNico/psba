@@ -5,6 +5,7 @@ dependencies:
   config:
     - block_content.type.basic
     - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_my_text_field
   module:
     - text
 _core:
@@ -21,4 +22,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_my_text_field:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden: {  }

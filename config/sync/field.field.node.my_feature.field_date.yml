@@ -1,0 +1,26 @@
+uuid: bc1ece9e-9958-4f86-8955-b4d2f1d6c809
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.my_feature
+  module:
+    - datetime
+_core:
+  default_config_hash: nJcmxUENpWq4_PjFLg_h3ItdXnCkEVpvg3PsOw8rdFc
+id: node.my_feature.field_date
+field_name: field_date
+entity_type: node
+bundle: my_feature
+label: Date
+description: 'Add a date.'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,40 @@
+uuid: 3b7dcca6-cbd5-47bf-ba37-7ef8b7de482b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image01
+    - node.type.imagetest
+  module:
+    - image
+_core:
+  default_config_hash: Vq5YjtF8ZBpVtngCw7a-YCyNoU_tEexU4I-9f0FVMPE
+id: node.imagetest.field_image01
+field_name: field_image01
+entity_type: node
+bundle: imagetest
+label: image01
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

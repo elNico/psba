@@ -1,0 +1,25 @@
+uuid: f297fd7e-0fd4-4f95-8ebd-d474dda16a5a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4850f9ca-a58c-4cc6-89de-774a282d388e'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: newblocktype
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:4850f9ca-a58c-4cc6-89de-774a282d388e'
+settings:
+  id: 'block_content:4850f9ca-a58c-4cc6-89de-774a282d388e'
+  label: 'New block type'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

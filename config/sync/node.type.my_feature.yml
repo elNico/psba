@@ -1,0 +1,20 @@
+uuid: 064ae27d-9e8a-489d-b7fb-0b60a5233ffe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: el03YsVETJeUgbj1KEiEvlWZ5pNYFokFe4kQNlUerCQ
+name: 'My Feature'
+type: my_feature
+description: 'Just testing.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
