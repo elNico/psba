@@ -3,3 +3,19 @@
  * @file
  * Module file for psba.
  */
+
+use \Drupal\Core\Form\FormStateInterface;
+
+function psba_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'node_article_form') {
+
+    // Get the current user
+    $user = \Drupal::currentUser();
+
+    // Check for permission
+    if (!$user->hasPermission('can add article tags')) {
+      $form['field_tags']['#disabled'] = TRUE;
+      $form['field_tags']['#markup'] = t("<strong>You don't have permissions to add tags.</strong>");
+    }
+  }
+}
