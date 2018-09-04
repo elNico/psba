@@ -25,6 +25,7 @@
         "drupal/core": "~8.5.3",
         "drupal/devel": "1.x-dev",
         "drupal/examples": "1.x-dev",
+        "drupal/features": "^3.7",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

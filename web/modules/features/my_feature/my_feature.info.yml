@@ -1,0 +1,14 @@
+name: 'My Feature'
+description: 'Provides My Feature content type and related configuration. Just testing.'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - field
+  - file
+  - image
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
